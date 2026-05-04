@@ -195,6 +195,7 @@ import gregtech.common.tileentities.machines.multi.MTELargeChemicalReactor;
 import gregtech.common.tileentities.machines.multi.MTELargeCombustionEngine;
 import gregtech.common.tileentities.machines.multi.MTELargeFluidExtractor;
 import gregtech.common.tileentities.machines.multi.MTELargeMolecularAssembler;
+import gregtech.common.tileentities.machines.multi.MTELargeNaquadahReactor;
 import gregtech.common.tileentities.machines.multi.MTELargeNeutralizationEngine;
 import gregtech.common.tileentities.machines.multi.MTELargeTurbineGas;
 import gregtech.common.tileentities.machines.multi.MTELargeTurbineHPSteam;
@@ -937,6 +938,9 @@ public class LoaderMetaTileEntities implements Runnable { // TODO CHECK CIRCUIT 
                 AdvancedImplosionCompressor.ID,
                 "multimachine.adv.implosioncompressor",
                 "Density^2").getStackForm(1L));
+
+        ItemList.LargeNaquadahReactor
+            .set(new MTELargeNaquadahReactor(LargeNaquadahReactor.ID, "NaG", "Large Naquadah Reactor").getStackForm(1));
 
         ItemList.UniversalChemicalFuelEngine.set(
             new MTEUniversalChemicalFuelEngine(
